@@ -1,10 +1,10 @@
 {
   "name": "tugas-4-basic-javascript-3",
   "version": "1.0.0",
-  "description": "tugas 4",
+  "description": "tugas 4 untuk basic javascript fazztrack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [
     "basic",
