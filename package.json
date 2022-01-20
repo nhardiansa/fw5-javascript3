@@ -1,0 +1,15 @@
+{
+  "name": "fw5-javascript3",
+  "version": "1.0.0",
+  "description": "repo tugas basic javascript #3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "basic",
+    "javascript"
+  ],
+  "author": "Nabil Hardiansa",
+  "license": "ISC"
+}
