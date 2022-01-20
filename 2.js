@@ -6,17 +6,17 @@ const getmonth = (callback) => {
     if (!error) {
       callback(null, month)
     } else {
-      callback(new Error('Sorry Data Not Found'), [])
+      callback(new Error('Sorry Data Not Found', []))
     }
-  }, 4000)
+  }, 1000)
 }
 
-getmonth((error, result) => {
-  if (error) {
-    console.log(error);
-  } else {
-    result.map(el => {
+getmonth((error, data) => {
+  if (!error) {
+    data.map(el => {
       console.log(el);
     })
+  } else {
+    console.log(error);
   }
 })
