@@ -1,6 +1,6 @@
 const getmonth = (callback) => {
   setTimeout(() => {
-    let error = false;
+    let error = true;
     let month = ['Januari', 'Februari', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'Desember'];
 
     if (!error) {
@@ -8,11 +8,11 @@ const getmonth = (callback) => {
     } else {
       callback(new Error('Sorry Data Not Found', []))
     }
-  }, 1000)
+  }, 4000)
 }
 
 getmonth((error, data) => {
-  if (!error) {
+  if (error === null) {
     data.map(el => {
       console.log(el);
     })
