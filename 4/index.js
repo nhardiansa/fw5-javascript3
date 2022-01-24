@@ -1,7 +1,7 @@
 const fetch = require('cross-fetch');
-const URL = 'https://jsonplaceholder.typicode.com/user';
+const URL = 'https://jsonplaceholder.typicode.com/users';
 
-const getUser = async (url) => {
+const getUsers = async (url) => {
   try {
     const result = await fetch(url);
     const final = await result.json();
@@ -20,4 +20,4 @@ const getUser = async (url) => {
   }
 }
 
-getUser(URL);
+getUsers(URL);
